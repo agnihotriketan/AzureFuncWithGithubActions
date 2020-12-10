@@ -27,7 +27,7 @@ namespace FunctionAppCICDNov2020
 
             string responseMessage = string.IsNullOrEmpty(name)
                 ? "This HTTP triggered function executed successfully. Pass a name in the query string or in the request body for a personalized response."
-                : $"Hey, {name}. This HTTP triggered function executed successfully.";
+                : $"Hey, {name}. CICD done via GitHubAction.";
 
             return new OkObjectResult(responseMessage);
         }
